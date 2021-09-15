@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day6</title>
+    <style>
+        body {
+            margin-top: 30vh;
+        }
+        div {
+            text-align: center;
+        }
+        button {
+            background-color: slategray;
+            border-radius: 20px;
+        }
+        .operand {
+            padding: 30px;
+            font-size: 30px;
+        }
+        .operator {
+            padding: 50px;
+            font-size: 50px;
+        }
+        .operation {
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button type="button" id="xy" class="operand" onclick="operand()">x, y</button>
+    </div><br>
+    <div>
+        <button type="button" id="+" class="operator" onclick="operator(0)">+</button>
+        <button type="button" id="-" class="operator" onclick="operator(1)">-</button>
+        <button type="button" id="*" class="operator" onclick="operator(2)">*</button>
+        <button type="button" id="/" class="operator" onclick="operator(3)">/</button>
+        <button type="button" id="%" class="operator" onclick="operator(4)">%</button>
+    </div><br>
+    <div>
+        <button type="button" class="operation" onclick="answer()">계산식 콘솔창에 출력하기</button>
+    </div>
+    <script src="day6.js"></script>
+</body>
+</html>
