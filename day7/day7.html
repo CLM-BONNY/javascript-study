@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day7</title>
+    <style>
+        #all {
+            margin-top: 35vh;
+        }
+        #time {
+            text-align: center;
+        }
+        .time {
+            font-size: 80px;
+        }
+        #timeBtns {
+            text-align: center;
+        }
+        .timeFunc {
+            background-color: yellowgreen;
+            border-radius: 30px;
+            border: 0;
+            padding: 30px;
+            font-size: 60px;
+        }
+        .funcImg {
+            width: 50px;
+            height: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="time">
+            <span class="time">🕐</span>
+            <span class="time" id="timer">00:00:00</span>
+            <span class="time">🕐</span>
+        </div>
+        <div id="timeBtns">
+            <button type="button" class="timeFunc" id="stt" onclick="start()">
+                <img class="funcImg" src="./images/start.png" alt="stop">
+            </button>
+            <button type="button" class="timeFunc" id="stp" onclick="stop()">
+                <img class="funcImg" src="./images/stop.png" alt="stop">
+            </button>
+            <button type="button" class="timeFunc" id="ret" onclick="reset()">
+                <img class="funcImg" src="./images/reset.png" alt="reset">
+            </button>
+        </div>
+    </div>
+    <script src="day7.js"></script>
+</body>
+</html>
