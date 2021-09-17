@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day8</title>
+    <style>
+        @font-face {
+            font-family: 'SF_IceLemon';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_IceLemon.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        #nameBoard {
+            text-align: center;
+            background-color: darkcyan;
+            margin-top: 30vh;
+            width: 700px;
+            height: 300px;
+            border-radius: 30px;
+        }
+        #nickName {
+            font-family: 'SF_IceLemon';
+            font-size: 60px;
+            padding-top: 30px;
+        }
+        #boardBtn {
+            font-family: 'SF_IceLemon';
+            background-color: slategray;
+            font-size: 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nameBoard">
+        <p id="nickName" onclick="nameClicked()">전광판 버튼을 클릭하세요!</p><br>
+        <button type="button" id="boardBtn" onclick="buttonClicked()">전광판 버튼</button>
+    </div>
+    <script src="day8.js"></script>
+</body>
+</html>
