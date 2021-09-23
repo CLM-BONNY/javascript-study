@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day9</title>
+    <style>
+        @font-face {
+            font-family: 'Vitro_core';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        #window {
+            background-color: darkolivegreen;
+            text-align: center;
+            margin-top: 80px;
+            margin-left: 235px;
+            width: 1000px;
+            height: 500px;
+            border-radius: 50px;
+        }
+        #mvlist {
+            font-family: 'Vitro_core';
+            font-size: 40px;
+            padding-top: 30px;
+        }
+        #btns {
+            display: flex;
+            justify-content: center;
+        }
+        .funcbtns {
+            font-family: 'Vitro_core';
+            background-color: darkcyan;
+            border-color: darkcyan;
+            margin-top: 20px;
+            margin-right: 70px;
+            width: 100px;
+            height: 70px;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="window">
+        <p id="mvlist">인생영화 리스트</p>
+    </div>
+    <div id="btns">
+        <button type="button" id="plus" class="funcbtns" onclick="add()">추가</button>
+        <button type="button" id="minus" class="funcbtns" onclick="del()">삭제</button>
+        <button type="button" id="ok" class="funcbtns" onclick="confirm()">확인</button>
+    </div>
+    <script src="day9.js"></script>
+</body>
+</html>
