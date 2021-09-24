@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day10</title>
+    <style>
+        @font-face {
+            font-family: 'Cafe24Ssurround';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        #phone {
+            position: relative;
+            width: 20%;
+            height: 20%;margin-top: 50px;
+            margin-left: 600px;
+        }
+        #number {
+            position: absolute;
+            top: 160px;
+            left: 645px;
+            width: 15%;
+            height: 45%;
+        }
+        #btn {
+            position: absolute;
+            background-color: white;
+            border: none;
+            top: 500px;
+            left: 700px;
+            width: 120px;
+            height: 50px;
+            font-size: 50px;
+        }
+        #name {
+            display: none;
+            position: absolute;
+            font-family: 'Cafe24Ssurround';
+            font-size: 40px;
+            top: 200px;
+            left: 700px;
+        }
+        #phoneNum {
+            display: none;
+            position: absolute;
+            font-family: 'Cafe24Ssurround';
+            background-color: darkgreen;
+            padding: 10px;
+            border-radius: 30px;
+            font-size: 25px;
+            top: 400px;
+            left: 646px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img id="phone" src="./img/phone.png">
+        <img id="number" src="./img/number.png">
+        <button type="button" id="btn">📞</button>
+        <p id="name">김만두</p>
+        <span id="phoneNum">010-1234-5678</span>
+    </div>
+    <script src="day10.js"></script>
+</body>
+</html>
