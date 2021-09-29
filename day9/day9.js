@@ -14,7 +14,6 @@ function del() {
         if (movie === list[i].name) {
             list.splice(i, 1);
         } else {
-            alert("해당 영화 제목이 존재하지 않습니다.");
             break;
         }
     }
