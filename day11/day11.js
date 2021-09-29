@@ -1,5 +1,5 @@
 function input_check() {
-    let val = Number(document.getElementById("input_text").value);
+    let val = document.getElementById("input_text").value;
     if (val <= 4) {
         console.log("패딩, 두꺼운코드, 목도리, 기모제품");
     } else if (5 <= val && val <= 8) {
