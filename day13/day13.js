@@ -1,9 +1,10 @@
 let count = 0;
-let default_text = document.getElementById("cloth");
-let default_background = document.getElementById("body");
-let val = document.getElementById("input_text").value;
 
 function input_check() {
+    let default_text = document.getElementById("cloth");
+    let default_background = document.getElementById("body");
+    let val = document.getElementById("input_text").value;
+    console.log(val);
     if (val <= 4) {
         count++;
         console.log("패딩, 두꺼운코드, 목도리, 기모제품");
@@ -64,13 +65,14 @@ function input_check() {
 }
 
 function count_check() {
-    if (count === 3) {
-        default_text.innerHTML = "오늘 기온이" + "</br>" + " 여러번 바뀌나 ?";
-    } else if (count === 4) {
-        default_text.innerHTML = "아무 숫자나" + "</br>" + " 막 누르고 있지 !";
-    } else if (count === 5) {
-        default_text.innerHTML = "잘못 누른건가 ?";
-    } else if (count >= 6) {
-        default_text.innerHTML = "이제 계절" + "</br>" + "안 알려줄 거야!";
+    let text = document.getElementById("cloth");
+    if (count === 7) {
+        text.innerHTML = "오늘 기온이" + "</br>" + " 여러번 바뀌나 ?";
+    } else if (count === 8) {
+        text.innerHTML = "아무 숫자나" + "</br>" + " 막 누르고 있지 !";
+    } else if (count === 9) {
+        text.innerHTML = "잘못 누른건가 ?";
+    } else if (count >= 10) {
+        text.innerHTML = "이제 계절" + "</br>" + "안 알려줄 거야!";
     }
 }
